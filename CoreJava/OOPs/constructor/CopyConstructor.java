@@ -2,22 +2,22 @@ package OOPs.constructor;
 
 // Java doesn't have a built-in copy constructor, but we can define one manually.
 
-class Student {
+class Studentt {
     String name;
     int age=18;
 
 
-    Student(String x , int a) {
+    Studentt(String x , int a) {
         name =x;
         age=a;
     }
-    Student(String x ) {
+    Studentt(String x ) {
         name= x;
       
     }
 
     // copy constructor
-    Student(Student s){
+    Studentt(Studentt s){
         name = s.name;
         age = s.age;
     }
@@ -30,9 +30,9 @@ class Student {
 
 public class CopyConstructor {
     public static void main(String[] args) {
-        Student s1 = new Student("nikhil", 12);
-        Student s2 = new Student(s1);
-        Student s3 = new Student("sumit");
+        Studentt s1 = new Studentt("nikhil", 12);
+        Studentt s2 = new Studentt(s1);
+        Studentt s3 = new Studentt("sumit");
         s1.display();
         s2.display();
         s3.display();
