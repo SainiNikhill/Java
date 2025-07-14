@@ -14,7 +14,7 @@ This means static memebers are shared among all the instances.
 - Used when we need commom property for all instnaces of class.
 - makes program memory efficient.
 
-```
+```java
 class Student{
     int roll_no;
     String name;
@@ -23,7 +23,7 @@ class Student{
 ```
 here, everytime when we create an object the variable College also gets cretated which leads to extra memory usage so to save this we use Static keyword befor variable college as the college name is same for every object as its common property;
 
-```
+```java
 Class Student{
     int roll_no;
     String name;
@@ -38,7 +38,7 @@ Class Student{
 - A static methods can access static data member and can change the value of it.
 - Can be called using class name.
 
-``` 
+```java
 class mathutil{
     static int add (int a , int b){
         return a+b;
@@ -57,7 +57,7 @@ it is used to intitilaize the static data members.
 - it runs only when the class is loaded into the memory , before any objects of that class is cretaed.
 - it gets executed before main method.
 
-```
+```java
 class StaticBlock{
 
     static{
@@ -73,7 +73,7 @@ class StaticBlock{
 - only inner classes can be static.
 - once class is created independetly by declaring it static so we can use it without instance of the outer class.
 
-```
+```java
 class outer {
     static class inner {
         void show(){
