@@ -31,16 +31,16 @@ class Person {
     }
 }
 
-class Student extends Person{
+class Students extends Person{
     String course;
 
 
     // default constructor
-    Student(){
+    Students(){
         this("nikhil",21, "java"); // constructor chaining in child 
         System.out.println("Student default Constructor");
     }
-    Student(String name, int age, String course){
+    Students(String name, int age, String course){
         super(name,age); // calls Person's constructor 
         this.course = course;
         System.out.println("Student Parameterized Constructor");
@@ -53,7 +53,7 @@ class Student extends Person{
 
 public class ConstructorChainingUsingSuper {
     public static void main(String[] args) {
-        Student s1 = new Student();
+        Students s1 = new Students();
         System.out.println("------------------------------");
         s1.display();
     }

@@ -1,13 +1,13 @@
 package OOPs.constructor;
 
 // a constructor that accepts argument to initialize an objects  with specific values;
-class Student {
+class Student1 {
     String name;
     int age; 
 
     
     // parameterized constructor 
-    Student(String name, int age){
+    Student1(String name, int age){
         this.name = name;
         this.age= age;
     }
@@ -19,7 +19,7 @@ class Student {
 
 public class ParameterizedConstructor {
     public static void main(String[] args) {
-        Student s1 = new Student("nikhil", 22);
+        Student1 s1 = new Student1("nikhil", 22);
         s1.display();
     }
     
