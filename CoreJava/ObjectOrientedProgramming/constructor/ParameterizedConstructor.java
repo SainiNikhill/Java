@@ -1,4 +1,4 @@
-package OOPs.constructor;
+package ObjectOrientedProgramming.constructor;
 
 // a constructor that accepts argument to initialize an objects  with specific values;
 class Student1 {

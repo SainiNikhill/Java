@@ -1,4 +1,4 @@
-package OOPs;
+package ObjectOrientedProgramming;
 
 // declared with in class and perform certain action.
 

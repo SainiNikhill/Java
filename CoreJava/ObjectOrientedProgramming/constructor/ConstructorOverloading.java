@@ -1,4 +1,4 @@
-package OOPs.constructor;
+package ObjectOrientedProgramming.constructor;
 
 // constructor overloading in java means having multiple constructors in a class with same name but different parameters.
 // it allows objects to be intialized  in different ways.

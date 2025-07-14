@@ -1,4 +1,4 @@
-package OOPs.constructor;
+package ObjectOrientedProgramming.constructor;
 
   class car {
     String name;

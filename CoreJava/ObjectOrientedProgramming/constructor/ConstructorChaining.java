@@ -1,4 +1,4 @@
-package OOPs.constructor;
+package ObjectOrientedProgramming.constructor;
 
 // constructor chaining is a technique in object oriented programming where one constructor calls another constructor in the same class or parent class to reuse code;
 // threre are two different types of constructor chaining in java 

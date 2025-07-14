@@ -1,4 +1,4 @@
-package OOPs.constructor;
+package ObjectOrientedProgramming.constructor;
 
 // this is another type of constructor chaining in java, this happens between parent and child class. 
 

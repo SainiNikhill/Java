@@ -1,4 +1,4 @@
-package OOPs;
+package ObjectOrientedProgramming;
 
 public class Attributes {
     int x = 10 ; 

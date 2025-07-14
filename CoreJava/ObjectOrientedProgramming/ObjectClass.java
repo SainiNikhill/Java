@@ -1,4 +1,4 @@
-package OOPs;
+package ObjectOrientedProgramming;
 
 class student {
 
