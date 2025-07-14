@@ -38,7 +38,8 @@ Class Student{
 - A static methods can access static data member and can change the value of it.
 - Can be called using class name.
 
-``` class mathutil{
+``` 
+class mathutil{
     static int add (int a , int b){
         return a+b;
 
