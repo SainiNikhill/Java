@@ -7,9 +7,10 @@ JDBC (Java Database Connectivity) is an API in Java that enables applications to
 
 ## 7 Steps to Set Up JDBC in Java
 
-1. **Import JDBC package**
-   ```java
+1. Import JDBC package
+```java
    import java.sql.*;
+```
 2. Register JDBC Driver
 
 ```java
