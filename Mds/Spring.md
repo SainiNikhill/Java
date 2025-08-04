@@ -359,3 +359,87 @@ ApplicationContext context =
 
 MyService service = context.getBean(MyService.class);
 ```
+
+---
+
+## 🔁 Inversion of Control (IoC) and Dependency Injection (DI)
+
+---
+
+### 🌀 What is Inversion of Control (IoC)?
+
+**Inversion of Control** is a design principle where the control of object creation and dependency management is **transferred from the programmer to the Spring container**.
+
+In simple terms:
+
+> Instead of you **creating objects manually**, Spring does it **for you**, and also injects the dependencies.
+
+---
+
+### 🤝 What is Dependency Injection (DI)?
+
+**Dependency Injection** is a design pattern used by Spring to achieve IoC.
+
+It means:  
+> Instead of a class **creating its dependencies**, they are **injected** from outside (by the container).
+
+---
+
+### 📦 Types of Dependency Injection
+
+| Type           | Description                                 | Example                        |
+|----------------|---------------------------------------------|--------------------------------|
+| Constructor DI | Dependencies are injected via constructor   | Recommended for immutability   |
+| Setter DI      | Dependencies are injected via setter method | Useful when dependency is optional |
+| Field DI       | Dependencies are injected directly into fields | Common with `@Autowired`      |
+
+---
+
+### 🧪 Example: Constructor Injection (Recommended)
+
+```java
+@Component
+public class Car {
+    private final Engine engine;
+
+    @Autowired
+    public Car(Engine engine) {
+        this.engine = engine;
+    }
+}
+```
+
+### ⚙️ Setter Injection Example
+```java
+@Component
+public class Car {
+    private Engine engine;
+
+    @Autowired
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
+}
+```
+
+### Field Injection (Not recommended for unit testing)
+
+```java
+@Component
+public class Car {
+
+    @Autowired
+    private Engine engine;
+}
+```
+## 🧠 Benefits of IoC and DI
+Promotes loose coupling
+
+Improves testability (easy to mock dependencies)
+
+Makes code more modular and reusable
+
+Centralizes dependency management
+
+Follows SOLID principles (esp. Dependency Inversion Principle)
+
