@@ -239,6 +239,7 @@ public class MyBean {
         System.out.println("Bean is being destroyed");
     }
 }
+```
 
 ---
 
